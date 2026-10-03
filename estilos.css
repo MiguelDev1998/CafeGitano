@@ -76,6 +76,44 @@ h2 {
 
 }
 
+
+.promociones {
+    display: grid;
+
+    /* En Computadoras: 6 productos horizontalmente */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding:30px;
+}
+
+.promocion{
+    background-color:white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    overflow:hidden;
+
+    display:flex;
+    flex-direction: column;
+
+    /* animacion*/
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+.promocion:hover{
+    border: 2px solid #1d3557;
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+
+
+}
+
+
+
+
 /*IMAGENES*/
 .contenedor-img{
     width: 100%;
@@ -168,3 +206,9 @@ footer p{
     margin: 5px;
 }
 
+/* Mejora 1: estilo de los títulos */
+h1, h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
